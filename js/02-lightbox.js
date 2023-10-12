@@ -10,6 +10,6 @@ function markup(arr){
 </li>`).join('')
 };
 gallery.insertAdjacentHTML('afterbegin', markup(galleryItems));
-new SimpleLightbox('.gallery__item a', { /* options */ });
+new SimpleLightbox('.gallery__item a', { captionsData: 'alt', captionDelay:250 });
 
 console.log(galleryItems);
